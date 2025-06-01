@@ -13,6 +13,9 @@ WORKDIR /app
 COPY pyproject.toml poetry.lock README.md ./
 RUN poetry install --no-cache --no-interaction --no-ansi --no-root --without=dev
 
+COPY locales /app/locales
+RUN poetry run pybabel compile -d locales -D messages && find locales -name '*.po' -delete
+
 COPY dragonpottery_bot dragonpottery_bot
 RUN poetry install --no-cache --no-interaction --no-ansi --without=dev
 

@@ -1,0 +1,47 @@
+# Russian translations for dragonpottery-bot.
+# Copyright (C) 2025 Alexey Vaganov
+# This file is distributed under the same license as the dragonpottery-bot
+# project.
+# Alexey Vaganov <poofeg@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dragonpottery-bot 0.1\n"
+"Report-Msgid-Bugs-To: poofeg@gmail.com\n"
+"POT-Creation-Date: 2025-06-02 00:35+0300\n"
+"PO-Revision-Date: 2025-06-01 21:03+0300\n"
+"Last-Translator: Alexey Vaganov <poofeg@gmail.com>\n"
+"Language: ru\n"
+"Language-Team: Alexey Vaganov <poofeg@gmail.com>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.1\n"
+
+#: dragonpottery_bot/application/forms/start.py:15
+msgid "You haven't made any purchases before"
+msgstr "Вы не совершали покупок ранее"
+
+#: dragonpottery_bot/application/forms/start.py:18
+msgid "You have made purchases for {orders_sum} ₽"
+msgstr "Вы совершили покупки на {orders_sum} ₽"
+
+#: dragonpottery_bot/application/forms/start.py:21
+#, python-format
+msgid "Your promo code is {promocode} for a {percent}%% discount"
+msgstr "Ваш промокод {promocode} на скидку {percent}%%"
+
+#: dragonpottery_bot/application/forms/start.py:37
+msgid "Send my phone number"
+msgstr "Отправить номер телефона"
+
+#: dragonpottery_bot/application/forms/start.py:45
+msgid ""
+"Hello, {full_name}! Send your phone number using the \"Send my phone "
+"number\" button."
+msgstr ""
+"Здравствуйте, {full_name}! Отправьте ваш номер телефона с помощью кнопки "
+"\"Отправить номер телефона\"."
+
