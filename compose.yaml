@@ -1,0 +1,24 @@
+services:
+  app:
+    image: poofeg/dragonpottery-bot
+    environment:
+      TG__TOKEN:
+      TG__REDIS_URL: redis://redis/0
+      GSPREAD__SPREADSHEET_ID:
+      GSPREAD__SERVICE_ACCOUNT_FILENAME: /app/service-account.json
+    volumes:
+      - ./${GSPREAD__SERVICE_ACCOUNT_FILENAME}:/app/service-account.json
+    depends_on:
+      - redis
+    ports:
+      - "8080:8080"
+
+  redis:
+    image: redis:8-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:
